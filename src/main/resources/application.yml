@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: local
+  application:
+    name: unit-test-sample
+  datasource:
+    url: jdbc:postgresql://localhost:45432/local_sample
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+  flyway:
+    enabled: true
+    user: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:45432/local_sample
+    locations: classpath:/db/migration

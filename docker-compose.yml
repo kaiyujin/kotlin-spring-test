@@ -1,0 +1,13 @@
+version: "3"
+services:
+  kotlin-spring-sample-db:
+    image: postgres:12
+    ports:
+      - "45432:5432"
+    volumes:
+      - ./docker/postgres/:/docker-entrypoint-initdb.d
+    container_name: kotlin-spring-sample-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      TZ: Asia/Tokyo
