@@ -52,7 +52,8 @@ http://dbsetup.ninja-squad.com/user-guide.html
 - その他
   - Utils
     - 要テスト
-
+  - Mail
+    - 不要 (HTMLの内容確認は効率が悪いので目視）
 
 ### Privateメソッドをテストすべきか。する場合の方法。
 - Privateメソッドはテストすべきか論争
